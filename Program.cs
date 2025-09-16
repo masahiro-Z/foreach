@@ -10,6 +10,11 @@ namespace @foreach
     {
         static void Main(string[] args)
         {
+            string[]  DayOfWeek = { "Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
+            foreach (string Day in DayOfWeek)
+            {
+                Console.WriteLine(Day);
+            }
         }
     }
 }
