@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace @foreach
 {
+
+    enum DayOfWeek { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday };
+
     internal class Program
     {
         static void Main(string[] args)
         {
-            string[]  DayOfWeek = { "Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
-            foreach (string Day in DayOfWeek)
+            foreach (DayOfWeek day in Enum.GetValues(typeof(DayOfWeek)))
             {
-                Console.WriteLine(Day);
+                Console.WriteLine(day);
             }
         }
     }
